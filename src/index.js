@@ -12,4 +12,10 @@ import { searchRobots } from './reducers';
 const store = createStore(searchRobots);
 
 // ---------------------------------------------------------------------------
-ReactDOM.render(<App store={store} />, document.getElementById('root'));
+// by putting store in provider, makes accessible to all inside of it
+ReactDOM.render(
+    <Provider store={store}> 
+        <App />
+    </Provider>, 
+    document.getElementById('root')
+);
