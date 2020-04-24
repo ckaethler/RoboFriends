@@ -1,7 +1,7 @@
 // ---------------------------------------------------------------------------
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'redux';
+import { Provider, connect } from 'react-redux';
 import { createStore } from 'redux';
 import './index.css';
 import 'tachyons';
